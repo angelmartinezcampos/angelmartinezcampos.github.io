@@ -605,6 +605,23 @@ img {
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
 }
+.thesis_subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0);
+}
+.thesis_body{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0);
+  white-space:nowrap;
+}
+/* .thesis_end{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+  white-space:nowrap;
+} */
 .qualification__degree{
   display: inline-block;
   font-size: var(--smaller-font-size);
