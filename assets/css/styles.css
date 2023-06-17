@@ -603,7 +603,7 @@ img {
 .qualification__subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0);
 }
 .thesis_subtitle{
   display: inline-block;
@@ -1352,7 +1352,7 @@ img {
   }
 
   .qualification__sections{
-    grid-template-columns: .5fr;
+    grid-template-columns: .9fr;
   }
 
   .projects__container{
