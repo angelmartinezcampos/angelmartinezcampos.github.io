@@ -249,10 +249,6 @@ function validateSubject(){
         subjectError.innerHTML = 'Please add a subject';
         return false;
     }
-    if( !subject.match(/[a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?/) ){
-        subjectError.innerHTML = 'Enter full name!';
-        return false;
-    }
     subjectError.innerHTML = '<i class="uil uil-check-circle projects__modal-icon"></i>';
     return true;
 }
