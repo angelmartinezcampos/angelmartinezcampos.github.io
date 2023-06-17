@@ -196,6 +196,7 @@ themeButton.addEventListener('click', () => {
 var nameError = document.getElementById('name-error');
 var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
+var subjectError = document.getElementById('subject-error');
 
 function validateName(){
     var name = document.getElementById('fullName').value;
@@ -245,14 +246,14 @@ function validateSubject(){
     var subject = document.getElementById('subject').value;
 
     if(subject.length == 0){
-        nameError.innerHTML = 'Please add a subject';
+        subjectError.innerHTML = 'Please add a subject';
         return false;
     }
     if( !subject.match(/[a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?/) ){
-        nameError.innerHTML = 'Enter full name!';
+        subjectError.innerHTML = 'Enter full name!';
         return false;
     }
-    nameError.innerHTML = '<i class="uil uil-check-circle projects__modal-icon"></i>';
+    subjectError.innerHTML = '<i class="uil uil-check-circle projects__modal-icon"></i>';
     return true;
 }
 
