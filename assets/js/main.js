@@ -241,10 +241,25 @@ function validateMessage(){
     return true;
 }
 
+function validateSubject(){
+    var subject = document.getElementById('subject').value;
+
+    if(subject.length == 0){
+        nameError.innerHTML = 'Please add a subject';
+        return false;
+    }
+    if( !subject.match(/[a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?/) ){
+        nameError.innerHTML = 'Enter full name!';
+        return false;
+    }
+    nameError.innerHTML = '<i class="uil uil-check-circle projects__modal-icon"></i>';
+    return true;
+}
+
 /*==================== EMAIL SERVICE ====================*/ 
 function SendMail(){
 
-    if(!validateName() || !validateEmail() || !validateMessage() ){
+    if(!validateName() || !validateEmail() || !validateMessage() || validateSubject() ){
         // alert("Please fix the errors to send a message!");
         swal("Sorry!", "Please fix the errors to send a message!", "warning");
         return false;
@@ -256,9 +271,11 @@ function SendMail(){
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value
     }
-    emailjs.send("service_4ajtfo5", "template_ryff15a", params).then(function (res){
+    
+    
+    // email.send("service_4ajtfo5", "template_ryff15a", params).then(function (res){
         // alert("Success! " + res.status);
         // alert("Your message has been sent successfully!");
-        swal("Success!", "Your message has been sent!", "success");
-    })
+        // swal("Success!", "Your message has been sent!", "success");
+    // })
 }
