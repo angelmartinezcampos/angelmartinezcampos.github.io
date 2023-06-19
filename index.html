@@ -213,9 +213,19 @@
 
                         <div class="about__buttons">
                             <a download="" href="assets/pdf/CV Angel Martinez Campos_En.pdf" class="button button--flex">
-                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>                       
+                            <a onclick="openPDF()" class="button button--flex">
+                                Open CV&nbsp;<i class="uil uil-external-link-alt"></i>
                             </a>
                         </div>
+                        <script>
+                            function openPDF() {
+                                var pdfURL = 'assets/pdf/CV Angel Martinez Campos_En.pdf';
+                                window.open(pdfURL, '_blank');
+                            }
+                        </script>
+                        
                     </div>
                 </div>
             </section>
@@ -513,16 +523,20 @@
                              <!--==================== QUALIFICATION  1 ====================-->
                              <div class="qualification__data">
                                 <div>
-                                    <span class="qualification__degree">B.Eng.</span>
-                                    <h3 class="qualification__tittle">Electronic Industrial and Automation Engineering</h3>
-                                    <span class="qualification__subtitle">University of Girona<br><br>Bachelor's Thesis:</span>
-                                    <span class="thesis_body">Research of the integration of <br> HVAC & Raspberry pi communication, <br> in an existing KNX system</span>
-                                    <img src="assets/img/Bachelor.jpg" class="paper__img">
+                                    <span class="qualification__degree">M.Eng.</span>
+                                    <h3 class="qualification__tittle">Industrial Electronics</h3>
+                                    <div>
+                                        <i class="uil  uil-location-point"></i>
+                                        <span class="qualification__subtitle">Polytechnical University of Madrid</span>
+                                    </div>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2013 - 2019
+                                        2020 - 2021
                                     </div>
+                                    <span class="thesis_body"><br><em>Master's Thesis:<br>Implementation of a generative encoding Hypercube-based NeuroEvolution of Augmented Topologies (HyperNEAT) with Hardware Accelerated Substrate</em></span>
+                                    <img src="assets/img/Master.jpg" class="paper__img">
                                 </div>
+                                
                                 <div>
                                     <span class="qualification__rounder"></span>
                                     <span class="qualification__line"></span>
@@ -538,18 +552,18 @@
                                 </div>
 
                                 <div>
-                                    <span class="qualification__degree">M.Eng.</span>
-                                    <h3 class="qualification__tittle">Industrial Electronics</h3>
-                                    <span class="qualification__subtitle">Polytechnical University of Madrid<br><br>Master's Thesis:</span>
-                                    <span class="thesis_body">SoPC Implementation </span>
-                                    <span class="thesis_body">of a HyperNEAT </span>
-                                    <span class="thesis_body">with Hardware </span>
-                                    <span class="thesis_body">Accelerated Substrate</span>
-                                    <img src="assets/img/Master.jpg" class="paper__img">
+                                    <span class="qualification__degree">B.Eng.</span>
+                                    <h3 class="qualification__tittle">Electronic Industrial and Automation Engineering</h3>
+                                    <div>
+                                        <i class="uil  uil-location-point"></i>
+                                        <span class="qualification__subtitle">University of Girona</span>
+                                    </div>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2021
+                                        2013 - 2019
                                     </div>
+                                    <span class="thesis_body"><br><em>Bachelor's Thesis:<br>Research of the integration of HVAC & Raspberry pi communication, in an existing KNX system</em></span>
+                                    <img src="assets/img/Bachelor.jpg" class="paper__img">
                                 </div>
 
                             </div>
