@@ -1243,7 +1243,7 @@ img {
 
   .qualification__sections{
     display: grid;
-    grid-template-columns: .9fr;
+    /* grid-template-columns: .9fr; */
     justify-content: center;
   }
 }
@@ -1352,7 +1352,7 @@ img {
   }
 
   .qualification__sections{
-    grid-template-columns: .9fr;
+    /* grid-template-columns: .9fr; */
   }
 
   .projects__container{
