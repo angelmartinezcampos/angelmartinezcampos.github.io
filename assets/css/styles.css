@@ -614,7 +614,7 @@ img {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-0);
-  white-space:nowrap;
+  /* white-space:nowrap; */
 }
 /* .thesis_end{
   display: inline-block;
@@ -1243,7 +1243,7 @@ img {
 
   .qualification__sections{
     display: grid;
-    /* grid-template-columns: .9fr; */
+    /* grid-template-columns: .6fr; */
     justify-content: center;
   }
 }
@@ -1352,7 +1352,7 @@ img {
   }
 
   .qualification__sections{
-    /* grid-template-columns: .9fr; */
+    /* grid-template-columns: .5fr; */
   }
 
   .projects__container{
