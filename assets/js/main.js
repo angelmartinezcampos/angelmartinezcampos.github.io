@@ -269,10 +269,9 @@ function SendMail(){
         message : document.getElementById("message").value
     }
     
-    
-    // email.send("service_4ajtfo5", "template_ryff15a", params).then(function (res){
-        // alert("Success! " + res.status);
-        // alert("Your message has been sent successfully!");
-        // swal("Success!", "Your message has been sent!", "success");
-    // })
+    email.send("service_ucuyehl", "service_ucuyehl", params).then(function (res){
+        alert("Success! " + res.status);
+        alert("Your message has been sent successfully!");
+        swal("Success!", "Your message has been sent!", "success");
+    })
 }
