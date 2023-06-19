@@ -256,7 +256,7 @@ function validateSubject(){
 /*==================== EMAIL SERVICE ====================*/ 
 function SendMail(){
 
-    if(!validateName() || !validateEmail() || !validateMessage() || validateSubject() ){
+    if(!validateName() || !validateEmail() || !validateMessage() || !validateSubject() ){
         // alert("Please fix the errors to send a message!");
         swal("Sorry!", "Please fix the errors to send a message!", "warning");
         return false;
@@ -269,8 +269,8 @@ function SendMail(){
         message : document.getElementById("message").value
     }
     
-    email.send("service_ucuyehl", "service_ucuyehl", params).then(function (res){
-        alert("Success! " + res.status);
+    email.send("service_ucuyehl", "service_ucuyehl", params).then(function (response){
+        alert("Success! " + response.status);
         alert("Your message has been sent successfully!");
         swal("Success!", "Your message has been sent!", "success");
     })
