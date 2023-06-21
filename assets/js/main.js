@@ -261,7 +261,7 @@ function SendMail(){
         swal("Sorry!", "Please fix the errors to send a message!", "warning");
         return false;
     }
-
+    swal("chequeo ok");
     var params = {
         from_name : document.getElementById("fullName").value,
         email_id : document.getElementById("email_id").value,
