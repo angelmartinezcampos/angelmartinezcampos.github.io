@@ -256,7 +256,7 @@ function validateSubject(){
 /*==================== EMAIL SERVICE ====================*/ 
 function SendMail(){
 
-    if(!validateName() || !validateEmail() || !validateMessage() ){
+    if(!validateName() || !validateEmail() || !validateMessage() ||!validateSubject()){
         // alert("Please fix the errors to send a message!");
         swal("Sorry!", "Please fix the errors to send a message!", "warning");
         return false;
