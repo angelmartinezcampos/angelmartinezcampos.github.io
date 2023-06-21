@@ -268,11 +268,11 @@ function SendMail(){
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value
     }
-    swal("Parametros correctos");
-    email.send("service_ucuyehl", "template_g0w2fzb", params).then(function (response){
+    emailjs.send("service_ucuyehl", "template_g0w2fzb", params).then(function (response){
         alert("Success! " + response.status);
         alert("Your message has been sent successfully!");
         swal("Success!", "Your message has been sent!", "success");
-    })
-    swal("No se ha enviado, pero has llegado hasta aqui");
+    }, function(error) {
+        swal("Failure!", "Your message has not been sent!", "warning");
+     });
 }
