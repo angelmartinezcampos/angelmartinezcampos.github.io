@@ -269,7 +269,7 @@ function SendMail(){
         message : document.getElementById("message").value
     }
     
-    email.send("service_ucuyehl", "service_ucuyehl", params).then(function (response){
+    email.send("service_ucuyehl", "template_g0w2fzb", params).then(function (response){
         alert("Success! " + response.status);
         alert("Your message has been sent successfully!");
         swal("Success!", "Your message has been sent!", "success");
