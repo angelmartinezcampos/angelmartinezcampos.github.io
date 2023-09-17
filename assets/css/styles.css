@@ -509,6 +509,13 @@ img {
   margin-bottom: var(--mb-0-0);
 }
 
+.skills__subtitles{
+  font-size: var(--normal-font-size);
+  font-weight: bold;
+  color:white;
+  background-color: #009999;
+}
+
 .skills__name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
